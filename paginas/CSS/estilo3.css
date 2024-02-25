@@ -1,0 +1,21 @@
+body {/*se utiliza el body para el formato de toda la pagina en este caso no se usa el putno puesto que no hay 
+    un class*/
+    margin: 0; /* Asegura que no haya margen en el cuerpo */
+    padding: 0; /* Asegura que no haya relleno en el cuerpo */
+}
+.contenedor { /*se utiliza el punto para punto para hacer referencia al class de la etiqueta
+    en este caso se usa para referenciar al div o contenedor*/
+    position: relative; /* Cambiado a relativo para que los elementos internos estén relativos a este contenedor */
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% de la altura de la ventana */
+    overflow: hidden; /* Evita que el contenido desborde el contenedor */
+}
+.telmex{/*se utiliza el punto para punto para hacer referencia al class de la etiqueta
+    en este caso se usa para referenciar a la etiqueta imagen*/
+    position: absolute; /* Posiciona la imagen de fondo */
+    top: 0;/*sirve para desplazar el elemento contando desde el borde superior*/
+    left: 0;/*representa la alineación a la izquierda del comando*/
+    width: 100%;/*establece el ancho del elemento*/
+    height: 100%;/*establece la altura del elemento*/
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}

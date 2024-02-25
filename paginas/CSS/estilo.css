@@ -1,0 +1,46 @@
+body {/*Se utiliza el body para el formato de toda la pagina en este caso no se usa el putno puesto que no hay 
+    un class*/
+    margin: 0; /* Asegura que no haya margen en el cuerpo */
+    padding: 0; /* Asegura que no haya relleno en el cuerpo */
+}
+
+.contenedor { /*Como dentro de una etiqueta le dimos el atributo contenedor para dar */
+    position: relative; /* Cambiado a relativo para que los elementos internos estén relativos a este contenedor */
+    width: 100vw; /* 100% del ancho de la ventana */
+    height: 100vh; /* 100% de la altura de la ventana */
+    overflow: hidden; /* Evita que el contenido desborde el contenedor */
+}
+
+.matrix {/*A su vez como a nuestra imagen le dimos una clase indicamos que la misma y lo que se va a alterar*/
+    position: absolute; /* Posiciona la imagen de fondo */
+    top: 0;/*Sirve para desplazar el elemento contando desde el borde superior*/
+    left: 0;/*Representa la alineación a la izquierda del comando*/
+    width: 100%;/*Establece el ancho del elemento*/
+    height: 100%;/*Establece la altura del elemento*/
+    object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+}
+
+.contenedor2 {/*Inidcamos lo mismo para el contenedor número 2*/
+    position: absolute; /* Posiciona el contenedor 2 */
+    top: 50%; /*El elemento se desplazará hacia abajo desde la parte superior de su contenedor
+     en un 50% de la altura del contenedor */
+    left: 50%; /* El elemento se desplazará hacia la derecha desde el 
+    borde izquierdo de su contenedor en un 50% del ancho del contenedor. */
+    transform: translate(-50%, -50%); /* Centra el contenedor 2 */
+    background-color: rgba(255, 255, 255, 0.5); /* Es una propiedad de CSS que se utiliza 
+    para establecer el color de fondo de un elemento en este caso se indica que será Fondo translúcido */
+    padding: 20px; /* Espacio interior */
+    text-align: center; /*Se utiliza para alinear horizontalmente el texto dentro de un elemento o contenedor
+    cuando le decimos "center" el texto se alinea en el centro del contenedor en el que se encuentra.*/
+}
+
+.titulo {/*Como dentro del título indicamos una clase desde aquí podemos darle atributos al mismo*/
+    color: white; /* Color del texto */
+    margin-top: 0; /* Elimina el margen superior predeterminado del encabezado */
+}
+
+.contenedor2 img {/*Se utiliza esta sintaxys para indicar que queremos alterar o modificar la imagen que está 
+    dentro del contenedor numero 2 o el contenedor dentro del primer contendor*/
+    max-width: 100px; /* Asegura que la imagen no exceda el ancho del contenedor */
+    border-radius: 50%;/*Se asegura que el entorno del contenedor o el div sea redondo*/
+}

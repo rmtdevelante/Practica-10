@@ -1,0 +1,15 @@
+body{/*se utiliza el body para el formato de toda la pagina en este caso no se usa el putno puesto que no hay 
+    un class*/
+    text-align: center;/*se utiliza para alinear horizontalmente el texto dentro de un elemento o contenedor
+    cuando le decimos "center" el texto se alinea en el centro del contenedor en el que se encuentra.*/
+    background-color: blanchedalmond; /* Es una propiedad de CSS que se utiliza 
+    para establecer el color de fondo de un elemento en este caso se indica que será Fondo translúcido */
+}
+.titulo{/*Como al h1 le dimos una clase llamada titulo se puede dar estilo desde aquí evintado ensuciar el 
+    código HTML*/
+    color: blue; /* Color del texto */
+}
+.pan{/*Como a la imagen le dimos una clase podemos alterarla o modificarla desde el CSS*/
+    width: 600px;/*Establece el ancho del elemento*/
+    height: 550px;/*Establece la altura del elemento*/
+}

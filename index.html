@@ -1,0 +1,50 @@
+<!DOCTYPE html><!--informa al navegador qué versión de HTML (o XML) se usó para escribir el documento.-->
+<html lang="es"><!--el atributo lang dentro de la etiqueta de html se utiliza para hacer referencia al idioa
+    en este caso estamos usando el idioma español-->
+<head><!--La etiqueda head se utiliza para contener meta datos  tales como link, title y script-->
+    <meta charset="UTF-8"><!--se usa el atributo charset="UTF-8" que sirve para especificar el conjunto 
+        de caracteres que se utilizará para interpretar el contenido del documento HTML.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--en HTML ajusta la página web 
+        para adaptarse al ancho del dispositivo y establece un nivel inicial de escala adecuado en 
+        dispositivos móviles. -->
+    <title>Practica 10</title><!--con esta línea decimos que el titulo de la pestaña en la pagina se llamará
+        lo que está entre la etiqueta de apertura y cierre-->
+    <link rel="stylesheet" href="estiloP.css"><!--vincula la hoja de estilos externa que se había creado en la 
+        carpeta raíz con el nombre de CSS y de ahí al archcivo estilo2.css al documento HTML.-->
+    <link rel="icon" href="imgs/iconoBatman.png"/><!--vincula la hoja de estilos externa que se había creado en la 
+        carpeta imagenes para poder usar una como ícono de la página-->
+</head><!--con esta etiqueta de cierre indicamos que queremos que hasta acá queremos que sea todo el 
+    encabezado o los elementos que se ocuparán en el cuerpo-->
+<body><!--la etiqueda body se utiliza para todo el contenido visible por el usuario-->
+    <h1 class="titulo"> Elige o pan o compu</h1><!--La etiqueta h1 la utilizaremos para indicar un titulo
+        como es h1 será la letrá más grande dentro de la página-->
+    <img class="compu" src="imgs/3.jpg" alt="imagen no encontrada" usemap="#rectangle"/>
+     <!--la etiqueda img se usa para insertar imagenes en la pagina web-->
+    <map name="rectangle" style="border-style: black solid 10px;"><!-- se utiliza junto con las etiquetas 
+        <area> para crear mapas de imagen interactivos en una página web. -->
+        <area target="_blank" coords="34, 44, 270, 350" href="paginas/html1.html" 
+        alt="no encontrada" shape ="rectangle"/> <!-- Esta etiqueta <area> define un área rectangular en un mapa 
+        de imagen. Al hacer clic en esta área, se abrirá la página html1.html en una nueva pestaña del navegador. 
+        El atributo alt proporciona un texto alternativo si la región interactiva no se 
+        puede cargar o si se utiliza un lector de pantalla. -->
+        <area target="_blank" shape="circle" coords="337,300,44" 
+        href="paginas/html2.html" alt="no encontrada"><!-- Esta etiqueta <area> define un área circular en un mapa 
+        de imagen. Al hacer clic en esta área, se abrirá la página html2.html en una nueva pestaña del navegador. 
+        El atributo alt proporciona un texto alternativo si la región interactiva no se puede cargar o si se 
+        utiliza un lector de pantalla-->
+        <area target="_blank" shape="rectangle" coords="333,248,290,172" 
+        href="paginas/html3.html" alt="no encontrada"><!-- Esta etiqueta <area> define un área rectangular en un 
+        mapa de imagen. Al hacer clic en esta área, se abrirá la página html3.html en una nueva pestaña del 
+        navegador. El atributo alt proporciona un texto alternativo si la región interactiva no se puede cargar o 
+        si se utiliza un lector de pantalla-->
+    </map><!--Por último cerramos nuestra etiqueta map.-->
+    <img  clas="pan" src="imgs/2.jpg" alt="imagen no encontrada" usemap="#poly"><!-- Esta etiqueta <img> inserta una
+     imagen en la página, con la clase CSS "pan" aplicada, y utiliza un mapa de imagen llamado "poly" para definir 
+     áreas interactivas asociadas con la imagen. -->
+    <map name="poly" style="border-style: black solid 10px;"><!-- Esta etiqueta <map> define un mapa de imagen 
+    llamado "poly". Se utiliza para crear áreas interactivas en una imagen. El estilo en línea aplicado establece 
+    un borde sólido de color negro con un ancho de 10px alrededor del mapa de imagen. -->
+        <area target="_blank" shape="poly" coords="46,353,30,288,57,212,166,102,212,162,202,250,162,310,98,356" href="paginas/html2.html" alt="no se encontró">
+    </map><!--Por último cerramos la etiqueta map para indicar que ya no habrá más contenido ahí-->
+</body><!--En esta etiqueta indicamos que hasta aquí llegará la estructura visible de nuestra página web-->
+</html><!--En esta etiqueta indicamos que hasta aquí llegará la estructura visible de nuestra página web-->
